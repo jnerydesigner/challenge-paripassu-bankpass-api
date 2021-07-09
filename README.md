@@ -17,8 +17,8 @@
 - [x] Acesso às funcionalidades deve ser remoto, através de interface web, em um browser ou via aplicativo para dispositivos móveis;
 - [x] O servidor deve ser escrito obrigatoriamente em Java;
 - [x] A comunicação entre a interface cliente e o servidor deve ser realizada utilizando a arquitetura REST.
-- [ ] Deve ser possível fazer o build automatizado do servidor, dê preferência com Maven;
-- [ ] O servidor deve rodar em Tomcat;
+- [x] Deve ser possível fazer o build automatizado do servidor, dê preferência com Maven;
+- [x] O servidor deve rodar em Tomcat;
 - [x] O código fonte da interface gráfica deve estar separado do servidor e, preferencialmente, utilizar tecnologias como Angular ou React;
 - [x] Se necessário a utilização de um banco de dados, este deve ser o PostgreSQL 9.3 ou posterior.
 
