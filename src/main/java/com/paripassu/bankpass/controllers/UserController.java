@@ -1,5 +1,6 @@
 package com.paripassu.bankpass.controllers;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.paripassu.bankpass.helpers.GenerateRandoPass;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -15,6 +17,7 @@ public class UserController {
 	public String generateTicket(@PathVariable("type") String type) {
 		GenerateRandoPass pass = new GenerateRandoPass();
 		String ticket = pass.tickets(type);
+
 		return ticket;
 	}
 }
