@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  challenge_paripassu:
+    image: postgres
+    container_name: pass_bank_paripassu
+    restart: always
+    ports:
+      - 5436:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=postgres
+    volumes:
+      - pgdata:/data/postgres
+volumes:
+  pgdata:
+    driver: local
