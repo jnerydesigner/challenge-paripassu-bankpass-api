@@ -82,7 +82,7 @@ OS name: "linux", version: "5.4.0-26-generic", arch: "amd64", family: "unix"
 
 ```
 
-- Rode o comando do maven para instalar as dependências
+- Rode o comando do maven para instalar as dependências, detalhe rode o comando no local onde está o arquivo pom.xml
 
 ```
 mvn spring-boot:run
